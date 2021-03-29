@@ -1,8 +1,17 @@
 #include <stdio.h>
+extern void	jr_jr(int *nbr);
 
-int main()
+int main(void)
 {
-    printf("Hello World\n");
+	int n;
+	int *nbr;
 
-    return 0;
+	n = 1;
+	nbr = &n;
+
+	jr_jr(nbr);
+	
+	printf("%d\n", *nbr);
+
+	return 0;
 }
